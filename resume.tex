@@ -1,0 +1,184 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Cil Hardianto Satriawan}}\\
+	Bandung, Indonesia $\cdot$ cil.satriawan@gmail.com $\cdot$ (62) 821 3163 8069\\
+\end{center}
+
+%==== Education ====%
+\textbf{Institut Teknologi Bandung}\hfill Bandung, Indonesia\\
+Master in Informatics Engineering \textit{GPA: 3.75} \hfill Sep 2015 - Jun 2018\\
+\vspace{2mm}
+\header{Education}
+\textbf{Institut Teknologi Bandung}\hfill Bandung, Indonesia\\
+Bachelor in Informatics Engineering \textit{GPA: 2.8} \hfill Sep 2008 - October 2014\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Work Experience}
+\vspace{1mm}
+
+\textbf{Prosa} \hfill Bandung, Indonesia\\
+\textit{Systems Lead} \hfill June 2019 -\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+  \item Lead, manage, and supervise members of the Systems team
+  \item Design and manage the development of internal systems for use
+    within Prosa
+\end{itemize}
+\textbf{Prosa} \hfill Bandung, Indonesia\\
+\textit{Speech Engineer} \hfill January 2018 -\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+  \item Design and implement various speech systems
+  \item Speech-related research, mostly related to speaker
+    identification/verification
+  \item Supervised the development of speech synthesis and recognition systems
+\end{itemize}
+\textbf{Agranara} \hfill Bandung, Indonesia\\
+\textit{Chief Technology Officer} \hfill December 2017 -\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Design and implement various large information systems in the banking
+    and geospatial domains
+  \item Lead and manage multiple development teams
+  \item Plan and implement short and long-term strategies for continued growth and
+    profitability
+\end{itemize}
+\textbf{Institut Teknologi Bandung} \hfill Bandung, Indonesia\\
+\textit{Research Assistant} \hfill Sep 2015 - Sep 2017\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Data collection, analysis, preprocessing, and training of automatic
+    speech recognition and speaker identification models for meeting
+    transcription with PT INTI
+  \item Course/academic assistant
+\end{itemize}
+\textbf{Kuassa} \hfill Bandung, Indonesia\\
+\textit{DSP Engineer} \hfill May 2012 - Sep 2015\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Designed and implemented VST plugins for audio and musical applications
+  \item Utilize various technologies for the digitization of analog audio
+    equipment
+\end{itemize}
+\textbf{The British Institute} \hfill Bandung, Indonesia\\
+\textit{Instructor} \hfill Oct 2008 - May 2010\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Teach conversational and formal english courses
+\end{itemize}
+
+\header{Skills}
+\begin{tabular}{ l l }
+	Programming languages: & Python, C, C++, PHP, Go, Java, Javascript \\
+	Programming domains:   & Scientific programming, Distributed systems, 
+  Digital Signal Processing, \\
+                         & Web programming,        \\
+  Engineering management:& Alinging product development to projects, 
+\end{tabular}
+\vspace{2mm}
+
+\header{Projects}
+{\textbf{BKN Text To Speech}} {\sl Python, C++} \\
+Took part in the development of a speech synthesis system used to generate
+spoken examination questions for blind students. The system is to be delivered
+by the of October.
+\vspace*{2mm}
+{\textbf{BCA Voice ID}} {\sl Python, C++, Java} \\
+Designed, implemented, and lead the development of a voice identification
+system for the call center of Bank Central Asia (BCA). The system is currently
+in deployment and will be used to serve priority customers.\\
+\vspace*{2mm}
+{\textbf{Sistem Informasi Government and Institutional (SIGI) Mandiri}} {\sl PHP (Laravel), Javascript (React), SQL (PostgreSQL)} \hfill sigi2018.agranara.com\\
+Designed and implemented a large information system for the Government and
+Institutional Banking (GVI) group of Bank Mandiri HQ. A total of 43 modules
+have been created so far, with development now entering the third phase.\\
+\vspace*{2mm}
+
+\header{Publications}
+\textbf{Feature-based Noise Robust Speech Recognition on an Indonesian Language Automatic Speech Recognition System} \hfill Proceedings ICEECS\\
+\hfill 2014\\
+\vspace*{2mm}
+\textbf{Towards Robust Indonesian Speech Recognition with Spontaneous-speech Adapted Acoustic Models} \hfill SLTU-2016 Workshop on Spoken Language Technologies for under-resourced languages\\
+\hfill 2016\\
+\vspace*{2mm}
+\textbf{Average Window Smoothing for an Indonesian Language Online Speaker
+Identification System} \hfill International Journal of Electrical Engineering
+and Informatics\\
+\hfill 2019\\
+\vspace*{2mm}
+
+\ 
+\end{document}
