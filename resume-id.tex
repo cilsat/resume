@@ -1,0 +1,283 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Cil Satriawan}}\\
+	Bandung, Indonesia $\cdot$ cil.satriawan@gmail.com $\cdot$ (62) 821-3163-8069\\
+\end{center}
+
+%==== Education ====%
+\header{Pendidikan}
+\vspace{1mm}
+\textbf{Institut Teknologi Bandung}\hfill Bandung, Indonesia\\
+Magister Teknik Informatika\hfill Sep 2015 - Jun 2018\\
+\vspace{5mm}
+\textbf{Institut Teknologi Bandung}\hfill Bandung, Indonesia\\
+Sarjana Teknik Informatika\hfill Sep 2008 - Oct 2014\\
+\vspace{5mm}
+\textbf{National Junior College}\hfill Singapore\\
+ \hfill Oct 2003 - Dec 2007\\
+\vspace{5mm}
+
+%==== Experience ====%
+\header{Pengalaman Kerja}
+\vspace{1mm}
+
+\textbf{Prosa} \hfill Bandung, Indonesia\\
+\textit{Systems Lead} \hfill Jun 2019 -\\
+\vspace{-3mm}
+\begin{itemize} \itemsep 1pt
+  \item Mengawasi divisi sistem beserta anggotanya
+  \item Merancang, membangun, dan mengawasi pengembangan sistem-sistem inti di Prosa
+\end{itemize}
+\textbf{Prosa} \hfill Bandung, Indonesia\\
+\textit{Speech Engineer} \hfill Jan 2018 - Feb 2020\\
+\vspace{-3mm}
+\begin{itemize} \itemsep 1pt
+  \item Merancang dan membangun sistem terkait ucapan, termasuk pengenalan
+    ucapan, pengenalan pembicara, dan sintesis ucapan.
+  \item Penelitian terkait ucapan, di antaranya termasuk pengumpulan dan
+    pengolahan data latih, pengembangan model, serta perancangan percobaan 
+\end{itemize}
+\textbf{Agranara} \hfill Bandung, Indonesia\\
+\textit{Chief Technology Officer} \hfill Dec 2017 -\\
+\vspace{-3mm}
+\begin{itemize} \itemsep 1pt
+  \item Merancang dan membangun berbagai sistem informasi di bidang perbankan
+    dan geospasial
+  \item Memimpin dan mengelola berbagai tim pengembangan
+  \item Merencanakan dan menjalankan strategi jangka pendek dan panjang untuk
+    memastikan pertumbuhan dan keuntungan perusahaan
+\end{itemize}
+\textbf{Freelance Programmer} \hfill Bandung, Indonesia\\
+\textit{Software Engineer} \hfill Sep 2016 - Jun 2018\\
+\vspace{-3mm}
+\begin{itemize} \itemsep 1pt
+  \item Mengembangkan perangkat lunak di berbagai bidang, termasuk pengenalan
+    ucapan, visualisasi data untuk keperluan perairan, dan sistem informasi
+\end{itemize}
+\textbf{Institut Teknologi Bandung} \hfill Bandung, Indonesia\\
+\textit{Asisten Dosen} \hfill Sep 2015 - Sep 2017\\
+\vspace{-3mm}
+\begin{itemize} \itemsep 1pt
+  \item Pengumpulan dan pengolahan data serta penelitian mengenai pengenalan
+    ucapan dan pembicara terotomatisasi dalam rangka membangun sistem transkipsi
+    rapat untuk PT INTI
+  \item Asisten perkuliahan
+\end{itemize}
+\textbf{Kuassa} \hfill Bandung, Indonesia\\
+\textit{DSP Engineer} \hfill May 2012 - Sep 2015\\
+\vspace{-3mm}
+\begin{itemize} \itemsep 1pt
+  \item Merancang dan membangun perangkat lunak \textit{VST} untuk kebutuhan pengolahan
+    audio dan perekaman lagu
+  \item Menggunakan berbagai teknik untuk menerjemahkan perangkat keras audio
+    analog ke dalam bentuk perangkat lunak
+\end{itemize}
+\textbf{The British Institute} \hfill Bandung, Indonesia\\
+\textit{Instructor} \hfill Oct 2008 - May 2010\\
+\vspace{-3mm}
+\begin{itemize} \itemsep 1pt
+	\item Mengajar bahasa Inggris untuk pembicaraan dan formal
+\end{itemize}
+\vspace{3mm}
+
+\header{Keterampilan}
+\vspace{3mm}
+\begin{tabular}{ l l }
+\vspace{3mm}
+	Bahasa pemrograman: & Python, C, C++, PHP, Go, Java, Javascript \\
+	Domain pemrograman: & Scientific programming, Distributed systems, 
+  Digital Signal Processing, \\
+\vspace{3mm}
+                         & Machine Learning, Web development, Information
+                         Systems, GIS \\
+  Engineering management: & Technology strategy, development synergy \\
+\vspace{3mm}
+                         & Aligning business, technology, and research
+                         concerns \\
+\end{tabular}
+\vspace{5mm}
+
+\header{Pekerjaan Terpilih}
+\vspace{2mm}
+{\textbf{BSM Single Dashboard}} \hfill Jakarta, Indonesia \\
+{\sl PHP, Javascript} \hfill Jan 2020 - \\
+\vspace{1mm}
+Sistem informasi berskala nasional yang mengintegrasikan data dan kebutuhan
+semua group di bawah direktorat Retail Bank Syariah Mandiri (BSM). Direncanakan
+untuk melalui 3 fase pengembangan, dengan fase pertama sedang dalam masa
+pengujian.\\
+\vspace*{3mm}
+{\textbf{Komponen Teknologi Ucapan}} \hfill Bandung, Indonesia \\
+{\sl Python, C++} \hfill Oct 2019 - \\
+\vspace{1mm}
+Komponen terkait teknologi ucapan, termasuk pengenalan ucapan, pengenalan
+pembicara, dan sintesis ucapan. Dirancang untuk dapat digunakan oleh aplikasi
+lain secara mudah di lingkungan server, termasuk \textit{on-premise} dan di
+\textit{cloud}. \\
+\vspace*{3mm}
+{\textbf{BKN Text To Speech}} \hfill Bandung, Indonesia \\
+{\sl Python, C++} \hfill Aug - Oct 2019 \\
+\vspace*{1mm}
+Sistem sintesis ucapan yang digunakan untuk membangkitkan pertanyaan terucap
+untuk siswa tunanetra dalam UAN tingkat SMA, untuk digunakan dalam UAN tahun
+2019.\\
+\vspace*{3mm}
+{\textbf{Chart Builder Mandiri}} \hfill Jakarta, Indonesia \\
+{\sl PHP, Javascript, SQL} \hfill Jan - Jun 2019 \\
+\vspace*{1mm}
+Merancang dan membangun sistem yang memudahkan pengguna direktorat SPM Bank
+Mandiri Pusat dalam mendefinisikan dan melakukan visualisasi terhadap data
+mereka. Pengguna dapat secara dinamis memuat sumber data, formula, dan
+visualisasi data termasuk bar chart, pie chart, bubble chart, dan sebagainya.\\
+\vspace*{3mm}
+{\textbf{WAIS BSM}} \hfill Jakarta, Indonesia \\
+{\sl PHP, Javascript, SQL} \hfill Sep 2018 - \\
+\vspace*{1mm}
+Implementasi sistem informasi untuk direktorat Wholesale dari Bank Syariah
+Mandiri (BSM) yang mengumpulkan dan mengolah data dari \textit{data warehouse}
+untuk digunakan di berbagai kebutuhan analisis. Sedang dalam tahap pengembangan
+fase 3. \\
+\vspace*{3mm}
+{\textbf{Voice ID}} \hfill Jakarta, Indonesia \\
+{\sl Python, C++, Java} \hfill Dec 2018 - \\
+\vspace*{1mm}
+Sistem terdistribusi untuk melakukan verifikasi terhadap suara
+pelanggan/penelpon pada \textit{call center} Bank Central Asia (BCA) di berbagai
+situs. Sistem ini dirancang untuk mengurangi waktu yang diperlukan oleh agen
+\textit{call center} untuk memastikan identitas penelponnya. Proyek ini sedang
+dalam tahap audit akhir.\\
+\vspace*{3mm}
+{\textbf{Voice Intel}} \hfill Jakarta, Indonesia \\
+{\sl Python, PHP, C++} \hfill May 2018 - Nov 2018 \\
+\vspace*{1mm}
+Sistem identifikasi dan verifikasi ucapan yang dikembangkan untuk Badan
+Intelijen Nasional (BIN). Sistem ini mendaftarkan tersangka melalui rekaman
+ucapan yang tersedia secara umum dan mencocokkannya terhadap rekaman. \\
+\vspace*{3mm}
+{\textbf{SIGI Mandiri}}  \hfill sigi2018.agranara.com\\
+{\sl PHP, Javascript, SQL} \hfill Feb 2018 - \\
+\vspace*{1mm}
+Pengembangan sistem informasi jangka panjang yang digunakan oleh direktorat
+Government and Institutional Banking (GVI) Bank Mandiri pusat. Pengembangan
+telah melalui 4 fase pengembangan besar, dan masih berlanjut sampai saat ini,
+dengan total modul mencapai 47. \\
+\vspace*{3mm}
+{\textbf{Sistem Informasi Hutan KLHK}}  \hfill Jakarta, Indonesia\\
+{\sl PHP, Javascript, SQL} \hfill 2017 - 2018\\
+\vspace*{1mm}
+Sistem informasi yang digunakan untuk memetakan dan menyelesaikan masalah
+terkait konflik hutan, terutama hutan adat, antara pemegang kepentingan di
+berbagai level. \\
+\vspace*{3mm}
+{\textbf{Visualisasi Sumur PUSAIR}}  \hfill Bandung, Indonesia\\
+{\sl Python} \hfill 2016 - 2016\\
+\vspace*{1mm}
+Sistem visualisasi 3D yang digunakan untuk menggambarkan titik-titik pengeboran
+sumur dan memperkirakan topologi lapisan-lapisan tanah di DKI Jakarta.\\
+\vspace*{3mm}
+{\textbf{Perisalah INTI/Intens}}  \hfill Bandung, Indonesia\\
+{\sl Python, C, C++, Javascript} \hfill 2015 - 2017\\
+\vspace*{1mm}
+Proyek riset dan pengembangan yang bertujuan mengembangakan sistem pengenalan
+ucapan untuk kebutuhan rapat berbagai institusi pemerintahan, terutama MPR/DPR,
+bekerja-sama dengan PT INTI melalui pendanaan riset. Hasil akhir adalah sebuah
+sistem yg digunakan dalam perangkat Perisalah.\\
+\vspace*{3mm}
+{\textbf{Kuassa Amplifikation Cerberus}}  \hfill Bandung, Indonesia\\
+{\sl C++} \hfill 2014 - 2015\\
+\vspace*{1mm}
+Perangkat lunak musik yang mensimulasi \textit{amplifier} dan \textit{speaker
+cabinet} untuk gitar bas, dengan berbagai model \textit{gain stage} yang
+diangkat dari rangkaian listrik merek-merek terkenal, maupun yang dirancang
+sendiri. \\
+\vspace*{3mm}
+
+\header{Publikasi}
+\vspace{2mm}
+Satriawan, C.H., Lestari, D.P. (2014). Feature-based Noise Robust Speech Recognition on an Indonesian Language Automatic Speech Recognition System.
+Proc. ICEECS.\\
+\vspace*{3mm}
+Hoesen, D., Satriawan, C.H., Lestari, D.P., Khodra, M.L. (2016). Towards Robust Indonesian Speech Recognition with Spontaneous-speech Adapted Acoustic Models.
+SLTU-2016 Workshop on Spoken Language Technologies for under-resourced
+languages.\\
+\vspace*{3mm}
+Satriawan, C. H., Lestari, D.P. (2016). Analyzing and Classifying Indonesian Spontaneous and Dictated Speech. OCOCOSDA 2016.\\
+\vspace*{3mm}
+Satriawan, C. H., Lestari, D.P. (2018). Average Window Smoothing for an
+Indonesian Language Online Speaker Identification System.
+International Journal of Electrical Engineering and Informatics.\\
+
+\ 
+\end{document}
