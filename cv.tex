@@ -1,0 +1,287 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{hyperref}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-30pt}
+\begin{center}
+	{\Huge \scshape {Cil Satriawan}}\\
+	Bandung, Indonesia $\cdot$ (62) 821-3163-8069 $\cdot$ cil.satriawan@gmail.com 
+        $\cdot$ \href{https://www.linkedin.com/in/cil-satriawan-a60601111}{LinkedIn}\\
+\end{center}
+
+%==== Work Experience ====%
+\header{Work Experience}
+\vspace{1mm}
+
+\textbf{Prosa} \hfill Bandung, Indonesia\\
+\textit{VP Engineering} \hfill Jan 2022 -\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -2pt
+  \item Grew the engineering division (SWE, DevOps, QA) from 25 to 60 engineers.
+  \item Implemented an engineering management structure/track through the
+    coaching of tech leads.
+  \item Improved year-on-year retention rate by 50\% through the adoption of
+    company-wide 1-on-1s.
+  \item Improved time-to-productivity through appointment of dedicated
+    onboarding mentors and development of onboarding material.
+  \item Led the end-to-end development of Conversa, a SaaS and on-premise
+    enterprise chatbot system, using domain-driven and agile methodologies.
+\end{itemize}
+\vspace{-3mm}
+\textit{Systems Lead} \hfill Jun 2019 - Dec 2021\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -2pt
+  \item Supervised and managed the DevOps engineers of the Systems team.
+  \item Designed and led the development of systems, projects, and products
+    organization-wide.
+\end{itemize}
+\vspace{-3mm}
+\textit{Speech AI Engineer} \hfill Jan 2018 - Jan 2020\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -2pt
+  \item Designed and implemented the Voice ID biometric speech system, worth USD
+    \$270,000 annually.
+  \item Speech-related research; data collection and pre-processing, modeling,
+    and experiment design.
+\end{itemize}
+
+\vspace{-2mm}
+\textbf{Agranara} \hfill Jakarta, Indonesia\\
+\textit{Co-Founder and CTO} \hfill Dec 2017 -\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -2pt
+  \item Designed and led the development of several large information systems in
+    the banking and geospatial sectors, closing projects worth a combined total of
+    USD \$500k.
+  \item Lead and manage multiple development teams, totalling 20 engineers.
+\end{itemize}
+
+\vspace{-2mm}
+\textbf{Institut Teknologi Bandung} \hfill Bandung, Indonesia\\
+\textit{Graduate Research Assistant} \hfill Sep 2015 - Sep 2017\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -2pt
+  \item Researched and developed an AI meeting transcription system in
+    collaboration with PT INTI.
+  \item Academic assistant for undergraduate-level speech machine learning courses.
+\end{itemize}
+
+\vspace{-2mm}
+\textbf{Kuassa} \hfill Bandung, Indonesia\\
+\textit{DSP Engineer} \hfill May 2012 - Sep 2015\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -2pt
+  \item Designed and implemented VST plugins for audio and musical applications.
+  \item Utilize various technologies for the simulation of analog audio
+    equipment.
+\end{itemize}
+
+%==== Education ====%
+\header{Education}
+\vspace{1mm}
+
+\textbf{Institut Teknologi Bandung}\hfill Bandung, Indonesia\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -2pt
+  \item Master in Informatics Engineering \textit{GPA 3.75} \hfill Sep 2015 - Jun 2018
+  \item Bachelor in Informatics Engineering \hfill Sep 2008 - October 2014
+\end{itemize}
+% \vspace{-2mm}
+% \textbf{National Junior College}\hfill Singapore\\
+% \hfill Oct 2003 - Dec 2007\\
+
+%==== Skills ====%
+\header{Skills \& Interests}
+\vspace{2mm}
+\hspace{-4mm}
+\begin{tabular}{ l l }
+\textbf{Coding:} & Python, PHP, C/C++, Javascript/Typescript, Java, Go,
+PostgreSQL, Redis, Kafka,\\
+\vspace{1mm}
+                 & Docker, Kubernetes, Terraform, GCP, Linux\\
+
+\textbf{Tools}:
+\vspace{1mm}
+& Agile, Scrum, Waterfall, Microservices, DDD, TDD, CI/CD \\
+
+\textbf{Interests:}
+\vspace{1mm}
+& Audio Engineering, Music Production, Open Source Software, Applied ML\\
+
+\end{tabular}
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+{\textbf{Conversa}} {\sl Python, React, PyTorch, Java, ejabberd} \hfill Jun 2022 -\\
+Chatbot system implemented as a collection of domain-driven microservices for
+enterprise SaaS and on-premise use. Consists of authorization, chatbot builder,
+chatbot engine, deployment, omnichannel, and human agent services.\\
+\vspace*{2mm}
+
+{\textbf{Voice ID}} {\sl Python, C++, Java, Kaldi, Go} \hfill Dec 2018 -\\
+Real-time biometric voice verification system developed for a leading national bank.
+Integrates with the client's telephony system to process upwards of 100 MBps of
+audio across hundreds of concurrent customer telephone calls and several data
+centers. 200k priority customers have been enrolled into the system as of Dec
+2022. The project contributes USD \$270k annually to the company.
+\vspace*{2mm}
+
+{\textbf{Prosa Console}} {\sl Python, React, Java, Keycloak, Superset} \hfill
+Oct 2020 -\\
+License/quota management system for internal products and APIs.
+A service-based system providing a centralized SSO for employees and customers,
+a public application for customers to purchase and manage plans, an admin
+application for product managers and sysadmins, and BI dashboard for analysts.
+Provides services for 200k registered users, handling 150k quota usage requests
+per day.
+\vspace*{2mm}
+
+{\textbf{Vision Dashboard}}
+{\sl Python, OpenCV, Kafka} \hfill Jun 2020 - \\
+A scalable surveillance platform that allows users to add feeds/videos and apply
+multiple object detectors for monitoring and analytics purposes, including face
+mask detection, people distance and counting, etc.\\
+\vspace*{2mm}
+
+{\textbf{Prosa API}} 
+{\sl Python, gRPC, Go, Kubernetes} \hfill April 2020 - \\
+Designed and implemented parts of a scalable distributed system of speech
+decoders, consisting of speech synthesis and recognition subsystems, to be used
+in applications/projects within Prosa. The system is to be deployed on a
+Kubernetes cluster on Google Cloud Platform (GCP).\\
+\vspace*{2mm}
+
+{\textbf{Speech Decoders}}
+{\sl Python, C++, Kaldi, Merlin, gRPC} \hfill Oct 2019 - \\
+Designed and implemented parts of a scalable distributed system of speech
+decoders, consisting of speech synthesis and recognition subsystems, to be used
+in applications/projects within Prosa. The system is to be deployed on a
+Kubernetes cluster on Google Cloud Platform (GCP).\\
+\vspace*{2mm}
+
+{\textbf{Chart Builder Mandiri}} \hfill Jakarta, Indonesia \\
+{\sl PHP, Javascript, SQL} \hfill Jan - Jun 2019 \\
+\vspace*{1mm}
+Designed and implemented the back end of a system that allows users to
+dynamically define and display data sources, formulae, charts, and pages for
+reports, presentations, and storage. The system has been successfully deployed
+in production in the SPM group of Bank Mandiri, and is used as a module in
+various other systems.\\
+\vspace*{3mm}
+
+{\textbf{WAIS BSM}} \hfill Jakarta, Indonesia \\
+{\sl PHP, Javascript, SQL} \hfill Sep 2018 - \\
+\vspace*{1mm}
+Designed and implemented the back end of a large-scale information system for
+Bank Syariah Mandiri (BSM) called the Wholesale Dashboard Information System
+(WAIS). The system receives and collates data from the BSM data warehouse for
+use in various analytics across the wholesale banking directorate. Further
+expansions are in planning for other BSM directorates.\\
+\vspace*{3mm}
+
+{\textbf{Voice Intel}} \hfill Jakarta, Indonesia \\
+{\sl Python, PHP, C++} \hfill May 2018 - Nov 2018 \\
+\vspace*{1mm}
+Took part in the development of a voice identification and verification system
+for Badan Intelijen Nasional (BIN). The system enrolls suspects through
+publically available recordings and matches them against surveillance calls to
+help determine culpability.\\
+\vspace*{3mm}
+{\textbf{SIGI Mandiri}}  \hfill sigi2018.agranara.com\\
+{\sl PHP, Javascript, SQL} \hfill Feb 2018 - \\
+\vspace*{1mm}
+Designed and implemented the back end to a large-scale information system for
+the Government and Institutional Banking (GVI) group of Bank Mandiri HQ. A
+total of 43 modules have been developed so far, with several more planned
+moving forward into the third phase of development.\\
+\vspace*{3mm}
+
+\header{Publications}
+\vspace{2mm}
+Satriawan, C.H., Lestari, D.P. (2014). Feature-based Noise Robust Speech Recognition on an Indonesian Language Automatic Speech Recognition System.
+Proc. ICEECS.\\
+\vspace*{3mm}
+Hoesen, D., Satriawan, C.H., Lestari, D.P., Khodra, M.L. (2016). Towards Robust Indonesian Speech Recognition with Spontaneous-speech Adapted Acoustic Models.
+SLTU-2016 Workshop on Spoken Language Technologies for under-resourced
+languages.\\
+\vspace*{3mm}
+Satriawan, C. H., Lestari, D.P. (2016). Analyzing and Classifying Indonesian Spontaneous and Dictated Speech. OCOCOSDA 2016.\\
+\vspace*{3mm}
+Satriawan, C. H., Lestari, D.P. (2018). Average Window Smoothing for an
+Indonesian Language Online Speaker Identification System.
+International Journal of Electrical Engineering and Informatics.\\
+
+\ 
+\end{document}
