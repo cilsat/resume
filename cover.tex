@@ -1,0 +1,139 @@
+\documentclass[11pt]{article}
+    \usepackage[a4paper]{geometry}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{hyperref}
+    \usepackage{textcomp}
+    \usepackage{enumitem}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-10pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    \begin{center}
+      {\large \scshape {#1}}
+      \lineunder
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\profile} [5] {
+    \vspace*{-15pt}
+    \begin{center}
+        {\huge \scshape \textbf{#1}}\\
+        \vspace{1mm}
+        \small {#2} $\cdot$ {#3} $\cdot$ {#4} $\cdot$ {#5}
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\vspace*{-40pt}
+
+%==== Profile ====%
+\profile{Cil Satriawan}{Bandung, Indonesia}{(62)821-3163-8069}
+{cil.satriawan@gmail.com}{\href{https://www.linkedin.com/in/cil-satriawan-a60601111}{LinkedIn}}
+
+%==== Cover Letter ====%
+\header{Cover Letter}
+\vspace{1mm}
+
+Practical AI is currently past the point of disruption, yet not quite
+ubiquitous. As entry costs and the initial adoption hurdle are overcome, I
+believe the following decade will mark the entry of AI into all facets of daily
+life. Given the current zeitgeist with regards to AI, its world-class AI
+expertise and rapid growth, AssemblyAI sounds like an incredibly exciting place
+to work at. I would love to contribute my experience to the team in any capacity.
+\vspace{3mm}
+
+I am an engineer and manager currently based in Indonesia with prior experience
+in the AI space. I am relocating to London in Augutst 2023, where my partner
+will be pursuing a postgraduate degree. I grew up in various Commonwealth
+countries and consider English my mother tongue.
+\vspace{3mm}
+
+In the past 5 years I have founded a software house and joined an
+AI start-up, both of which I am currently active in. As founder of a software
+house primarily in the banking domain, I am involved in both business and
+technical decisions, often assuming PM duties and interacting with clients as
+needed. As VP Engineering of an AI start-up, I am responsible for hiring,
+onboarding, KPIs, and growing teams. I maintain mostly high-level technical
+duties, mainly surrounding design and architecture, but still code and conduct
+code reviews regularly.
+\vspace{3mm}
+
+As an engineer and manager, I find satisfaction when various disparate elements
+click together to achieve a single purpose, be it for software systems or teams
+of people. I am usually there to facilitate the building process, ensuring it
+can be done reliably, sustainably, and quickly (enough). In teams as in systems,
+I have learnt that communication is key: Transparency, clarity, brevity, and a
+large degree of tolerance is needed to make teams and teams of teams function
+robustly. I believe I can bring this experience with me as an engineering
+manager at Scandit, and further advance this skill for the benefit of
+the organization.
+\vspace{3mm}
+
+Ambiguity and fluidity of roles is unaviodable in a fast moving development
+environment, where specs and direction may change rapidly. In a given
+development cycle, I have had to assume the role of product owner, project
+manager, developer, and operations, oftentimes across multiple projects and
+products. Rapidly iterating, occasionally discarding, and eventually refactoring
+systems for performance within strict timelines is something I contend with
+regularly. I believe this kind of flexibility will be a boon for the team, given
+the disruptive nature of the product and the amount of work still to be done to
+displace legacy technologies.
+\vspace{3mm}
+
+I would be delighted to discuss the ways in which I could contribute to the
+AssemblyAI team in greater detail. I look forward to hearing from you.
+\vspace{3mm}
+
+Kind regards,\newline
+Cil Satriawan
+
+\ 
+\end{document}

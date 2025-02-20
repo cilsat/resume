@@ -1,0 +1,133 @@
+\documentclass[11pt]{article}
+    \usepackage[a4paper]{geometry}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{hyperref}
+    \usepackage{textcomp}
+    \usepackage{enumitem}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-10pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    \begin{center}
+      {\large \scshape {#1}}
+      \lineunder
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\profile} [5] {
+    \vspace*{-15pt}
+    \begin{center}
+        {\huge \scshape \textbf{#1}}\\
+        \vspace{1mm}
+        \small {#2} $\cdot$ {#3} $\cdot$ {#4} $\cdot$ {#5}
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\vspace*{-40pt}
+
+%==== Profile ====%
+\profile{Cil Satriawan}{Bandung, Indonesia}{(62)821-3163-8069}
+{cil.satriawan@gmail.com}{\href{https://www.linkedin.com/in/cil-satriawan-a60601111}{LinkedIn}}
+
+%==== Cover Letter ====%
+\header{Cover Letter}
+\vspace{1mm}
+
+Five years ago, I would have scoffed at the idea of AGI being achieved within
+our lifetimes. Recent advances have had me reconsidering, and seeing the
+singularity fast approaching, I would like to stay on the right side of the
+event horizon; that is, with Synthesia. At this rate, I believe AI-aided media
+generation for businesses, catered to their individual users, will be the norm
+within the decade. It would be my pleasure to discuss the ways I could
+contribute to the continued success of this approach and the Synthesia team.
+\vspace{3mm}
+
+I am an engineer and manager currently based in Bandung, Indonesia. I am
+relocating to London in 2023, where my partner will be pursuing a postgraduate
+degree. In the past 5 years I have founded a software house and joined a
+start-up, both of which I am currently active in. As founder of a software
+house, I am involved in both business and technical decisions, often assuming
+PM duties and interacting with clients as needed. As VP Engineering of an AI
+start-up, I am responsible for hiring, onboarding, KPIs, and growing teams. In
+both cases, I maintain high-level technical duties surrounding design and
+architecture, and regularly conduct code reviews and implement features.
+\vspace{3mm}
+
+As an engineer and manager, I believe my main strength lies in technical
+ownership. Whether as a team member or leader, I want to see our software
+delivered and used. When I believe things are moving too slowly or aimlessly, I
+will prod PMs for specifications and engineers for designs. I believe there is
+real value in moving fast, but am rarely willing to compromise technically or
+accumulate too much technical debt. In the organizations I currently work for, I
+often handle the internal "products" used as infrastructure by various teams,
+mostly acting as owner and occasionally engineer.
+\vspace{3mm}
+
+I find satisfaction when various disparate elements click together to achieve a
+single purpose, be it for software systems or teams of people. I am usually
+there to facilitate the building process, ensuring it can be done reliably,
+sustainably, and efficiently. In teams as in systems, I have learnt that
+communication is key: Transparency, clarity, brevity, and a large degree of
+tolerance is needed to make teams and teams of teams function robustly. I
+believe I can bring this experience with me as an engineer at Synthesia, and
+further advance this skill for the benefit of the organization.
+\vspace{3mm}
+
+I would be delighted to discuss the ways in which I could contribute to the
+Synthesia team in greater detail. I look forward to hearing from you.
+\vspace{3mm}
+
+Kind regards,\newline
+Cil Satriawan
+
+\ 
+\end{document}

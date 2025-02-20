@@ -1,0 +1,123 @@
+\documentclass[11pt]{article}
+    \usepackage[a4paper]{geometry}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{hyperref}
+    \usepackage{textcomp}
+    \usepackage{enumitem}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-10pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    \begin{center}
+      {\large \scshape {#1}}
+      \lineunder
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\profile} [5] {
+    \vspace*{-15pt}
+    \begin{center}
+        {\huge \scshape \textbf{#1}}\\
+        \vspace{1mm}
+        \small {#2} $\cdot$ {#3} $\cdot$ {#4} $\cdot$ {#5}
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\vspace*{-40pt}
+
+%==== Profile ====%
+\profile{Cil Satriawan}{Bandung, Indonesia}{(62)821-3163-8069}
+{cil.satriawan@gmail.com}{\href{https://www.linkedin.com/in/cil-satriawan-a60601111}{LinkedIn}}
+
+%==== Cover Letter ====%
+\header{Cover Letter}
+\vspace{1mm}
+
+I am a software engineer and manager currently based in Bandung, Indonesia with
+5 years of prior experience in the AI space building large-scale systems as both
+an individual contributor and lead. 
+\vspace{3mm}
+
+In the past 5 years I have founded a software house and joined an AI start-up,
+both of which I am currently active in. As VP Engineering of an AI start-up,
+I am responsible for hiring, onboarding, growing, and assessing teams. I maintain
+high-level technical duties, mainly surrounding design and architecture, and code
+and review code regularly. As the founder of a software house dealing primarily
+in the banking domain, I am involved in both business and technical decisions,
+often assuming PM duties and interacting with clients as needed.
+\vspace{3mm}
+
+I have a formal background in machine learning, specifically speech processing.
+Along with work experience in digital signal processing, this has been helpful
+in building AI systems geared towards speech processing and computer vision.
+Some examples include a national-scale voice biometrics system and a COVID
+surveillance system for local governments aiming to detect large congregations
+of people and face mask prevalence from public webcams. 
+\vspace{3mm}
+
+I am a native Indonesian speaker, but consider English my first language. I
+was born in Canada and spent a total of 12 years in English-speaking countries
+during my formative years. I have spent the past 3 years working almost entirely
+remotely, and reside primarily in Bandung, with frequent visits to Bogor and
+Jakarta. However, over the next 2 years I will occasionally be travelling to
+London where my partner is temporarily residing.
+\vspace{3mm}
+
+I would be delighted to discuss the ways in which I could contribute to the
+Revalue Nature team in greater detail. I look forward to hearing from you.
+\vspace{3mm}
+
+Kind regards,\newline
+Cil Satriawan
+
+\ 
+\end{document}

@@ -28,23 +28,27 @@
 
 \newcommand{\lineunder} {
     \vspace*{-8pt} \\
-    \hspace*{-18pt} \hrulefill \\
+    \hspace*{-10pt} \hrulefill \\
 }
 
 \newcommand{\header} [1] {
-    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
-    \vspace*{-6pt} \lineunder
+    \begin{center}
+      {\large \scshape {#1}}
+      \lineunder
+    \end{center}
+    \vspace*{-8pt}
 }
 
 \newcommand{\employer} [3] {
     { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
 }
 
-\newcommand{\contact} [3] {
-    \vspace*{-10pt}
+\newcommand{\profile} [5] {
+    \vspace*{-15pt}
     \begin{center}
-        {\Huge \scshape {#1}}\\
-        #2 \\ #3
+        {\huge \scshape \textbf{#1}}\\
+        \vspace{1mm}
+        \small {#2} $\cdot$ {#3} $\cdot$ {#4} $\cdot$ {#5}
     \end{center}
     \vspace*{-8pt}
 }
@@ -70,139 +74,138 @@
 \begin{document}
 \vspace*{-40pt}
 
-    
-
 %==== Profile ====%
-\vspace*{-15pt}
-\begin{center}
-	{\huge \scshape {Cil Satriawan}}\\
-\vspace{1mm}
-	Bandung, Indonesia $\cdot$ (62) 821-3163-8069 $\cdot$ cil.satriawan@gmail.com 
-        $\cdot$ \href{https://www.linkedin.com/in/cil-satriawan-a60601111}{LinkedIn}\\
-\end{center}
-\vspace{-1mm}
+\profile{Cil Satriawan}{Bandung, Indonesia}{(62)821-3163-8069}
+{cil.satriawan@gmail.com}{\href{https://www.linkedin.com/in/cil-satriawan-a60601111}{LinkedIn}}
 
 %==== Work Experience ====%
 \header{Work Experience}
 \vspace{1mm}
 
-\textbf{Prosa} \hfill Bandung, Indonesia\\
+\href{https://prosa.ai}{\textbf{Prosa AI}} \hfill Bandung, Indonesia\\
 \vspace{1mm}
 
-\emph{VP Engineering} \hfill Jan 2022 -\\
+\emph{VP Engineering} \hfill \emph{Jan 2022 -}\\
 \vspace{-3mm}
 \begin{itemize}[align=left, left=0pt..1em, itemsep=-2pt]
-  \item Grew engineering division (SWE, DevOps, QA) from 25 to 60 engineers,
+  \item Grow engineering division (SWE, DevOps, QA) from 25 to 60 engineers,
     using candidate testing software and adopting interview rubrics to
     accelerate the process.
-  \item Formalized adoption of engineering management structure/track,
-    implemented mentorship structure and personal development plans.
-  \item Improved retention rate from 80\% to 97\% through the adoption of
-    company-wide 1-on-1s.
-  \item Improved average time-to-productivity from 1 month to 2 weeks through
-    appointment of dedicated onboarding mentors and the development of
-    stack-specific onboarding material.
-  \item Lead cross-functional team in the development and ownership of
-    Conversa, a SaaS and on-premise enterprise chatbot system, using
-    domain-driven and agile methodologies.
-\end{itemize}
-\vspace{-2mm}
-
-\emph{Systems Lead} \hfill Jun 2019 -\\
-\vspace{-3mm}
-\begin{itemize}[align=left, left=0pt..1em, itemsep=-2pt]
-  \item Lead the 5 members of the Systems team in deployment of on-premise
-    and cloud-based systems.
-  \item Lead adoption of SOPs surrounding software development,
-    deployment, and site maintenance.
-  \item Lead and own development of Prosa Console, a license/quota management
-    system for internal products and APIs with single sign-on, self-onboarding
-    and payment for customers and business intelligence for managers. Serves
-    150k quota usage requests daily across 15 products.
-  \item Designed and led development of Prosa API layer, providing Console
-    integration and documentation for 9 NLP and 2 Speech APIs for B2B and B2C
-    purposes, and as foundation for other products.
-  \item Led the development of TTS SaaS v1, a text-to-speech B2C application
-    using internally trained models and reliant on the API layer, with over
-    5000 monthly active users.
-  \item Lead the development of Voice ID, a real-time telephony-based
-    biometric voice verification system developed for a leading national bank.
-    Currently processes hundreds of calls concurrently across several
-    datacenters, contributing USD \$270k annually to the company.
-\end{itemize}
-\vspace{-2mm}
-
-\emph{Speech AI Engineer} \hfill Jan 2018 - Jan 2020\\
-\vspace{-3mm}
-\begin{itemize}[align=left, left=0pt..1em, itemsep=-2pt]
-  \item Designed and developed Kaldi-based speech-related engines, providing
-    streaming and unary gRPC interfaces for speech-to-text and biometric
-    services with WebRTC-based noise detection.
-  \item Contributed to the development of a Merlin-based text-to-speech service.
-  \item Contributed to speech-to-text and text-to-speech research; data collection
-    and pre-processing, modeling, and experiment design.
+  \item Formalize adoption of engineering management structure/track,
+    implementing mentorship structure, 1-on-1s, and personal development plans,
+    improving retention rate from 80\% to 97\%.
+  %\item Improve average time-to-productivity from 1 month to 2 weeks through
+  %  appointment of dedicated onboarding mentors and the development of
+  %  stack-specific onboarding material.
+  \item Lead cross-functional team in the development of Conversa, a B2B SaaS
+    chatbot system using domain-driven and agile methods. Comprises services
+    for design, NLU, messaging, and analytics.
 \end{itemize}
 \vspace{-1mm}
 
-\textbf{Agranara} \hfill Jakarta, Indonesia\\
+\emph{Systems Lead} \hfill \emph{Jun 2019 - Dec 2021}\\
+\vspace{-3mm}
+\begin{itemize}[align=left, left=0pt..1em, itemsep=-2pt]
+  \item Manage and supervise 4 to 8 DevOps engineers, deploying and
+    maintaining on-premise and cloud-based systems for internal and customer
+    use, supporting $\sim$70 active deployments in total.
+  \item Fulfill 99\% uptime SLA across deployments through the development of
+    company-wide SOPs.
+  \item Led cross-functional team in the development of Prosa TTS SaaS, a
+    highly scalable system serving roughly 1800 hours of generated speech
+    monthly for twenty thousand users since March 2021.
+  \item Lead cross-functional team in the development of
+    \href{https://console2.prosa.ai}{Prosa Console}, a license/quota management
+    system for Prosa products and APIs. Comprises customer and internal-facing
+    services for SSO, payment, quota tracking, and BI. Serves 150k quota usage
+    requests daily.
+  \item Lead the development of Voice ID, a real-time AI biometric voice
+    verification system processing thousands of calls daily across several
+    datacenters for BCA, the leading national private bank.
+\end{itemize}
+\vspace{-1mm}
+
+\emph{Speech AI Engineer} \hfill \emph{Jan 2018 - Jan 2020}\\
+\vspace{-3mm}
+\begin{itemize}[align=left, left=0pt..1em, itemsep=-2pt]
+  \item Led development of speech-related AI engines, providing
+    optimized and scalable speech-to-text and voice biometric services, used
+    directly by customers and internal product teams.
+  \item Contributed to the development of the text-to-speech engine. Designed
+    for re-use and scalability, used directly by several large organizations
+    and as the basis for Prosa's TTS SaaS.
+\end{itemize}
+
+\textbf{Agranara Software House} \hfill Jakarta, Indonesia\\
 \vspace{1mm}
-\emph{Co-Founder and CTO} \hfill Dec 2017 -\\
+\emph{Co-Founder and CTO} \hfill \emph{Dec 2017 -}\\
 \vspace{-3mm}
 \begin{itemize}[align=left, left=0pt..1em, itemsep=-2pt]
-  \item Lead and contribute to development of several large and continuously
-    developed information systems in the banking and geospatial domains,
-    closing projects worth a combined total of USD \$500k.
-  \item Lead and manage multiple development teams, totalling 20 engineers.
-  \item Contribute to business and development strategy.
+  \item Lead and manage multiple development teams, totalling 20 engineers,
+    working on 6 information systems in the banking domain and 1 in the
+    geospatial domain.
+  \item Contribute to business and development strategy, closing projects
+    worth a combined total of \$500k.
+  \item Lead the development of WAIS, an information system actively
+    developed since 2019 for the wholesale directorate of BSI, the leading
+    national Islamic bank. Used by hundreds of branches nation-wide for
+    operations and daily monitoring of millions of transactions.
+  \item Contributed to the development of Kartia, a GIS-based task management
+    system utilizing GeoServer and PostGIS. 
 \end{itemize}
-\vspace{-1mm}
 
 \textbf{Institut Teknologi Bandung} \hfill Bandung, Indonesia\\
 \vspace{1mm}
-\emph{Graduate Research Assistant} \hfill Sep 2015 - Sep 2017\\
+\emph{Graduate Research/Academic Assistant} \hfill \emph{Sep 2015 - Sep 2017}\\
 \vspace{-3mm}
 \begin{itemize}[align=left, left=0pt..1em, itemsep=-2pt]
-  \item Researched and developed an AI meeting transcription system in
-    collaboration with PT INTI.
-  \item Academic assistant for undergraduate-level speech machine learning courses.
+  \item Researched and developed an AI meeting transcription system with PT INTI, a
+    state-owned telco.
+  \item Developed the prototype of a mobile speech transcription application for
+    cerebral palsy sufferers.
 \end{itemize}
-\vspace{-1mm}
 
-\textbf{Kuassa} \hfill Bandung, Indonesia\\
+\textbf{Kuassa Audio} \hfill Bandung, Indonesia\\
 \vspace{1mm}
-\emph{DSP Engineer} \hfill May 2012 - Sep 2015\\
+\emph{DSP Engineer} \hfill \emph{May 2012 - Sep 2015}\\
 \vspace{-3mm}
 \begin{itemize}[align=left, left=0pt..1em, itemsep=-2pt]
-  \item Designed and implemented VST plugins for audio and musical applications.
-  \item Utilize various technologies for the simulation of analog audio
-    equipment.
+  \item Contributed to the design and development of the Cerberus bass amplifier
+    VST plugin.
+  \item Contributed to the initial design of the Amplifikation 360 platform
+    using the Juce library.
 \end{itemize}
 
 %==== Education ====%
+\vspace{-2mm}
 \header{Education}
 \vspace{1mm}
 
 \textbf{Institut Teknologi Bandung}\hfill Bandung, Indonesia\\
 \vspace{-3mm}
 \begin{itemize}[align=left, left=0pt..1em, itemsep=-2pt]
-  \item Master in Informatics Engineering \textit{GPA 3.75} \hfill Sep 2015 - Jun 2018
+  \item Master in Informatics Engineering \textit{GPA 3.75/4} \hfill Sep 2015 - Jun 2018
   \item Bachelor in Informatics Engineering \hfill Sep 2008 - October 2014
 \end{itemize}
-% \vspace{-2mm}
-% \textbf{National Junior College}\hfill Singapore\\
-% \hfill Oct 2003 - Dec 2007\\
+\vspace{-2mm}
+\textbf{National Junior College}\hfill Singapore\\
+\vspace{-3mm}
+\begin{itemize}[align=left, left=0pt..1em, itemsep=-2pt]
+  \item A-Level \textit{4 As} \hfill Oct 2003 - Dec 2007
+\end{itemize}
 
 %==== Skills ====%
+\vspace{-3mm}
 \header{Skills \& Interests}
 \vspace{2mm}
 \hspace{-4mm}
 \begin{tabular}{ l l }
-\textbf{Coding:} & Python, PHP, C/C++, Javascript/Typescript, Java, Go,
+\textbf{Coding:} & Python, C/C++, PHP, Javascript/Typescript, Java, Go,
 PostgreSQL, Redis, Kafka,\\
 \vspace{1mm}
-                 & Docker, Kubernetes, Terraform, GCP, Linux\\
+                 & Docker, Kubernetes, Terraform, GCP, XMPP, DSP, Linux\\
 
-\textbf{Tools}:
+\textbf{Tools:}
 \vspace{1mm}
 & Agile, Scrum, Waterfall, Microservices, DDD, TDD, Git, CI/CD \\
 
